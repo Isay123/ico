@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ico_escuela</title>
+
+    <link rel="stylesheet" href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+</head>
+<body>
+
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header" style=" background-color:#ededed">
+            <a  class="brand-logo">
+                <img class="logo-abbr" src="~/img/LOGO2ico.png" alt="" style="width:250px !important">
+                <img class="logo-compact" src="~/img/text.png" alt="" style="width: 35px; top: 5px; position: relative;">
+                <img class="brand-title" src="~/img/text.png" alt="" style="width: 35px; top: 5px; position: relative;">
+
+             
+                 
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                         
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                  
+              
+                   
+                   
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" aria-expanded="false"><i class="icon icon-home"></i><span
+                                class="nav-text">Inicio</span></a></li>
+
+
+
+                                   <li class="nav-label">Alumnos</li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon icon-users-mm"></i><span class="nav-text">Agregar Alumnos</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="">Agregar Alumnos</a></li>
+                          
+                            <li><a href="">Ver Alumnos</a></li>
+                        </ul>
+                    </li>
+
+                     <li class="nav-label">Maestros</li>
+
+                       <li><a asp-area="" asp-controller="Home" asp-action="Index" aria-expanded="false"><i class="icon icon-users-mm-2"></i><span  class="nav-text"
+                               >Agregar Maestros</span></a></li>
+
+                                <li class="nav-label">Materias</li>
+
+                                  <li><a asp-area="" asp-controller="Home" asp-action="Index" aria-expanded="false"><i class="icon icon-book-open-2"></i><span
+                                class="nav-text">Agregar Materias</span></a></li>
+
+                                  
+
+                                
+                
+                </ul>
+            </div>
+
+
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        
+  <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+           
+
+             <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - ico_escuela - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+        </div>
+
+         
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="~/js/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+
+    <script src="~/js/dashboard/dashboard-1.js"></script>
+
+
+
+
+   
+</body>
+</html>
